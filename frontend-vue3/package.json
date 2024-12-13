@@ -1,0 +1,43 @@
+{
+  "name": "frontend-vue3",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/",
+    "prepare": "husky && husky install"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "element-plus": "^2.9.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/js": "^9.14.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "postcss": "^8.4.49",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.16",
+    "unplugin-auto-import": "^0.19.0",
+    "unplugin-vue-components": "^0.27.5",
+    "vite": "^6.0.1",
+    "vite-plugin-vue-devtools": "^7.6.5"
+  },
+  "lint-staged": {
+    "*.(vue,js)": "eslint --fix",
+    "*.src/": "prettier --write"
+  }
+}
